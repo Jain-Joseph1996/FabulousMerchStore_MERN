@@ -26,12 +26,13 @@ app.use(morgan("dev"));
 let origins = [""]; //set your prod origins here
 app.use((req, res, next) => {
   let origin = req.headers.origin;
-  if (process.env.NODE_ENV === "production") {
-    let org = origins.find((o) => o === origin) || origins[0];
-    res.setHeader("Access-Control-Allow-Origin", org);
-  } else {
-    res.setHeader("Access-Control-Allow-Origin", origin || "*");
-  }
+  // if (process.env.NODE_ENV === "production") {
+  //   let org = origins.find((o) => o === origin) || origins[0];
+  //   res.setHeader("Access-Control-Allow-Origin", org);
+  // } else {
+  //   res.setHeader("Access-Control-Allow-Origin", origin || "*");
+  // }
+  res.setHeader("Access-Control-Allow-Origin", 'https://fabulousmerchstore.netlify.app');
   res.setHeader("Access-Control-Allow-Credentials", true);
   res.setHeader(
     "Access-Control-Allow-Headers",
