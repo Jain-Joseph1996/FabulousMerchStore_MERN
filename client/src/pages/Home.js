@@ -15,7 +15,7 @@ const Home = () => {
           <div className="col-6">
             <div className="main-banner position-relative ">
               <img
-                src="images/main-banner-1.jpg"
+                src="images/main-banner.jpg"
                 className="img-fluid rounded-3"
                 alt="main banner"
               />
@@ -36,7 +36,8 @@ const Home = () => {
                   alt="main banner"
                 />
                 <div className="small-banner-content position-absolute">
-                  <h4>Best Sake</h4>
+                  <h4>Best Sale
+                  </h4>
                   <h5>iPad S13+ Pro.</h5>
                   <p>
                     From $999.00 <br /> or $41.62/mo.
