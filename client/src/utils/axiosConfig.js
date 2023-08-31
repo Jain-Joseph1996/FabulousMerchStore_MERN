@@ -4,7 +4,7 @@ export const instance = axios.create({
   withCredentials: true,
 });
 
-export const base_url = "http://localhost:5000/api/";
+export const base_url = "https://fms-deployment-service.onrender.com/api/";
 
 const getTokenfromLocalStorage = localStorage.getItem("customer")
   ? JSON.parse(localStorage.getItem("customer"))
